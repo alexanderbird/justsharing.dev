@@ -2,16 +2,39 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  max-width: unset;
 }
 
 body > * {
+  margin-bottom: 36px;
+  max-width: 800px;
+  padding-left: calc((100vw - 800px) / 2);
+  padding-right: calc((100vw - 800px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body > * > * {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 36px;
+}
+
+body > *:nth-child(2n) {
+  background-color: #0002;
+  width: 100%;
 }
 
 header {
   text-align: center;
+}
+
+footer {
+  margin: 0;
+  padding-bottom: 24px;
 }
 
 section.comparison {
@@ -21,4 +44,16 @@ section.comparison {
 ul {
   display: inline-block;
   text-align: left;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer > * {
+  margin-left: auto;
+  margin-right: auto;
 }
