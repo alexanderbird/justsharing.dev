@@ -32,6 +32,20 @@ header {
   text-align: center;
 }
 
+header h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header h1 > * {
+  margin: auto;
+}
+
+header img {
+  width: 1.6em;
+  height: 1.6em;
+}
+
 footer {
   margin: 0;
   padding-bottom: 24px;
