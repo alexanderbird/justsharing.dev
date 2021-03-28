@@ -70,7 +70,9 @@ section.video iframe {
   max-height: calc(var(--max-width) * var(--natural-height) / var(--natural-width));
   margin-bottom: 20px;
 }
-ul {
+
+ul,
+ol {
   display: inline-block;
   text-align: left;
 }
