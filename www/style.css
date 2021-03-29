@@ -52,12 +52,12 @@ footer {
   padding-bottom: 24px;
 }
 
-section.comparison {
+.comparison {
   display: grid;
   grid-template-columns: 1fr;
 }
 @media (min-width: 500px) {
-  section.comparison {
+  .comparison {
     grid-template-columns: repeat(2, 1fr);
   }
 }
